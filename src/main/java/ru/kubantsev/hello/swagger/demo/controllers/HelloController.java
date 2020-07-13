@@ -2,10 +2,10 @@ package ru.kubantsev.hello.swagger.demo.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import ru.kubantsev.hello.swagger.demo.enteties.Message;
+import ru.kubantsev.hello.swagger.demo.entities.Message;
 
 @Controller(value = "hello")
-public class Hello {
+public class HelloController {
 
     @GetMapping(
             value = "message",
@@ -15,4 +15,5 @@ public class Hello {
         Message message = new Message().withText("Hello world");
         return message;
     }
+
 }

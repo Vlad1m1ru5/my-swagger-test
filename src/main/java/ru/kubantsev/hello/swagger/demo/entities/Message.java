@@ -1,4 +1,4 @@
-package ru.kubantsev.hello.swagger.demo.enteties;
+package ru.kubantsev.hello.swagger.demo.entities;
 
 import java.io.Serializable;
 
