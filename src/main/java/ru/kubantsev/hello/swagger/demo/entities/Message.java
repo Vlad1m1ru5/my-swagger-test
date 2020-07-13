@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Message implements Serializable {
 
-    public Message(){};
+    public Message() {};
 
     private String text;
 
@@ -17,7 +17,7 @@ public class Message implements Serializable {
     }
 
     public Message withText(String text) {
-        this.text = text;
+        setText(text);
         return this;
     }
 }
