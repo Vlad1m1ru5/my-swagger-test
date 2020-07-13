@@ -6,15 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.kubantsev.hello.swagger.demo.entities.Message;
 
 @RestController
-@RequestMapping(value = "hello")
-public class HelloController {
+@RequestMapping(value = "invisible")
+public class InvisibleController {
 
     @GetMapping(
             value = "message",
             produces = "application/json")
-    public Message getHelloMessage() {
+    public Message getInvisibleMessage() {
         return new Message()
-                .withText("Hello message");
+                .withText("Invisible message");
     }
-
 }
