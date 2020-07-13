@@ -12,8 +12,11 @@ public class HelloController {
             produces = "application/json")
     public Message getMessage() {
 
-        Message message = new Message().withText("Hello world");
+        Message message = new Message()
+                .withText("Hello world");
+
         return message;
+
     }
 
 }
